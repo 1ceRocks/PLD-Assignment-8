@@ -198,6 +198,7 @@ while not(verRepeat):
             print(f"\nYour Num: {fnl_data} = Lotto Num: {fnl_win} | You've Lost.")
             winsound.PlaySound("Hello", winsound.SND_FILENAME)
             configRPT = input(f"{configRPT_Inpt}")
+            os.system('cls')
             inval_IPT = False
             while not(inval_IPT):
                 if configRPT.upper().replace(".,?!","",10) == "Y":
@@ -210,6 +211,7 @@ while not(verRepeat):
                     continue;
                 else:
                     configRPT = input(f"{RPT_printError}")
+                    os.system('cls')
                     inval_IPT = False
             if (verRepeat == True):
                 break;
