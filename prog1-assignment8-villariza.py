@@ -20,10 +20,13 @@ verRepeat = False # Acronym: Verify Repeat | The main while loop of the program;
 os.system('cls') # The terminal output beforehand will be cleared.
 
 """
-Variable Formats to be used on the main program below.
+Variable Formats to be used for the program interface and settings.
 """
-# Acronym: Program Greet       | The entire Program Name welcoming the user.
+# Acronym: Program Greet       | The Entire Program Name Welcoming the User.
 progGreet = "{}".format(f"\n$! Welcome to Villariza Lottery !$\n")
+
+# Acronym: Exit Input          | A Formal Valedictory of the Program to the user.
+progExt = '{}'.format("\nThank you for playing $! Villariza Lottery $! \nWe'll see you again next time! \n\nPython Info: The program has been closed.\n")
 
 # Acronym: Program Information | General Indicator on the Program Settings.
 progInfo = "{}".format(f"\nPROGRAM INFORMATION AND INSTRUCTIONS")
@@ -58,7 +61,7 @@ alnum_printError = '{}'.format("\nDo not include any unnecessary input/s on the 
 num_duplcError = '{}'.format("\nYour numerical input should not be the same as your previous input stored on the tuple list. \nPlease try again by typing and entering a different numerical input that should only range from 0-9. \n>>> ")
 
 # Acronym: Repeating Print Error       | User not inputting "Y" or "N" on the program repeat.
-RPT_printError = '{}'.format("\nInvalid Input. Please try again by answering Y / N (Yes / No) \nY , N >>> ")
+RPT_printError = '{}'.format("\nInvalid Input. Please try again by answering \"Y\" / \"N\" (Yes / No) \nY , N >>> ")
 
 # Acronym: Negative Value Error        | User Numerical Input - Less than 0 (Negative Integers).
 NEG_valError = '{}'.format("\nYour Numerical Input is Invalid. It should not be negative or less than 0. \nPlease try again by typing and entering a numerical input that should only range from 0-9. \n>>> ")
@@ -368,5 +371,5 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
         None
 
 os.system('cls') # The terminal output beforehand will be cleared.
-print("\nThank you for playing $! Villariza Lottery $! \nWe'll see you again next time! \n\nPython Info: The program has been closed.\n")
+print(f"{progExt}")
 sys.exit()
