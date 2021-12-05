@@ -16,6 +16,7 @@ Time     : Timer Countdown when the user has inputted numerical correspondence o
 Winsound : Audio Peripherals have been inserted for a compelling context outflow of the program. (Works only for Windows Desktop Users)
 """
 import os, random, sys, time, winsound
+
 verRepeat = False # Acronym: Verify Repeat | The main while loop of the program; when True, the program shall bound to stop and exit the terminal.
 os.system('cls') # The terminal output beforehand will be cleared.
 
@@ -294,7 +295,7 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
         print(f"\nPython will match it now! Did you win or not? \nYour Numbers: [{int(data1)}, {int(data2)}, {int(data3)}]\n")
 
         if sorted(fnl_data, reverse = True) == sorted(fnl_winNum, reverse = True):
-            for alpha in range(countdownSec): # Objective: 3 seconds elapsed for the loop to exit
+            for alpha in range(countdownSec): # Objective: 3 seconds shall elapse for the loop to exit
                 if alpha == 0:
                     print("Matching in    " + str(countdownSec - alpha) + " ...") # 0 second elapsed
                 elif alpha == 1:
