@@ -27,7 +27,7 @@ Variable Formats to be used for the program interface and settings.
 progGreet = "{}".format(f"\n\033[0;92;1mWelcome to\033[0m \033[41;33;1m🎰 Villariza Lottery 🎰\033[0m\n")
 
 # Acronym: Exit Input          | A Formal Valedictory of the Program to the user.
-progExt = '{}'.format("\n\033[0;1mThank you for playing \033[0;41;33;1m🎰 Villariza Lottery 🎰\033[0;1m !\nWe'll see you again next time! 🤝\n\n\033[0;34;1m💡 Python \033[33;1mInformation\033[0;1m: The \033[36mProgram\033[0;1m has been closed. 🔐\033[0m\n")
+progExt = '{}'.format(f"\n\033[0;1mThank you for playing \033[0;41;33;1m🎰 Villariza Lottery 🎰\033[0;1m !\nWe'll see you again next time! 🤝\n\n\033[0;34;1m💡 Python \033[33;1mInformation\033[0;1m: The \033[36mProgram\033[0;1m has been closed. 🔐\033[0m\n")
 
 # Acronym: Program Information | General Indicator on the Program Settings.
 progInfo = "{}".format(f"\n\033[0m📍 \033[47;30;1mPROGRAM INFORMATION AND INSTRUCTIONS\033[0m 📌\n")
