@@ -441,4 +441,4 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
 
 os.system('cls') # The terminal output beforehand will be cleared.
 print(f"{progExt}")
-sys.exit()
+sys.exit() # The program system will exit.
