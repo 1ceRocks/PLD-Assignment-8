@@ -24,25 +24,25 @@ os.system('cls') # The terminal output beforehand will be cleared.
 Variable Formats to be used for the program interface and settings.
 """
 # Acronym: Program Greet       | The Entire Program Name Welcoming the User.
-progGreet = "{}".format(f"\n$! Welcome to Villariza Lottery !$\n")
+progGreet = "{}".format(f"\n\033[0;92;1mWelcome to\033[0m \033[41;33;1m🎰 Villariza Lottery 🎰\033[0m\n")
 
 # Acronym: Exit Input          | A Formal Valedictory of the Program to the user.
-progExt = '{}'.format("\nThank you for playing $! Villariza Lottery $! \nWe'll see you again next time! \n\nPython Info: The program has been closed.\n")
+progExt = '{}'.format("\n\033[0;1mThank you for playing \033[0;41;33;1m🎰 Villariza Lottery 🎰\033[0;1m !\nWe'll see you again next time! 🤝\n\n\033[0;34;1m💡 Python \033[33;1mInformation\033[0;1m: The \033[36mProgram\033[0;1m has been closed. 🔐\033[0m\n")
 
 # Acronym: Program Information | General Indicator on the Program Settings.
-progInfo = "{}".format(f"\nPROGRAM INFORMATION AND INSTRUCTIONS")
+progInfo = "{}".format(f"\n\033[0m📍 \033[47;30;1mPROGRAM INFORMATION AND INSTRUCTIONS\033[0m 📌\n")
 
 # Acronym: Program Variable A  | Progam Setting A.
-prog_varA = "{}".format(f"\nA. You just simply have to input THREE (3) random numbers ranging from 0-9 on the terminal.")
+prog_varA = "{}".format(f"\n\033[0;94;1mA\033[0;1m. You just simply have to generate \033[92;1mTHREE (3) Random Numbers\033[0;1m as your \033[0;33;4mnumerical input ↵\033[0;1m that will only range from \033[0;33;1m(0-9).\033[0m")
 
 # Acronym: Program Variable B  | Progam Setting B.
-prog_varB = '{varA} e.g. {varB}'.format(varA = f"\nB. The Program will input THREE (3) Random Winning Numbers regarded on the Lottery Menu.", varB = [random.randint(0, 9), random.randint(0, 9), random.randint(0, 9)])
+prog_varB = '{varA} \033[0;36;3;1me.g. \033[0;41;33;1m{varB}\033[0m'.format(varA = f"\n\033[0;94;1mB\033[0;1m. \033[0;35;1mVice versa\033[0;1m; the \033[0;36;1mProgram will also \033[33;4mgenerate ↵\033[0m \033[92;1mTHREE (3) Winning Numbers\033[0;1m regarded in the \033[33;1mLottery Menu\033[0m.", varB = [random.randint(0, 9), random.randint(0, 9), random.randint(0, 9)])
 
 # Acronym: Program Variable C  | Progam Setting C.
-prog_varC = "{}".format(f"\nC. If the Random Winning Numbers matches with your Numerical Input, then the program output will respond saying \"You Win!\"")
+prog_varC = "{}".format(f"\n\033[0;94;1mC\033[0;1m. \033[0;35;1mIf\033[0;1m the \033[92mWinning Numbers \033[0;33;4;1mmatches\033[0;1m with your \033[92mRandom Numbers\033[0;1m, then the program output \033[0;35;1mshall respond\033[0;1m saying \033[0;36;3;1m\"You Win!\"\033[0;1m.")
 
 # Acronym: Program Variable D  | Progam Setting D.
-prog_varD = "{}".format(f"\nD. If the Random Winning Numbers does not match with your Numerical Input, then the program output will respond saying \"You've Lost.\"")
+prog_varD = "{}".format(f"\n\033[0;94;1mD\033[0;1m. \033[0;35;1mIf\033[0;1m the \033[92mWinning Numbers \033[0;33;4;1mdoes not match\033[0;1m with your \033[92mRandom Numbers\033[0;1m, '' \033[0;35;1m'' \033[0;36;3;1m\"You Lost.\"\033[0;1m.")
 
 # Aggregated variable formats to be printed as def-named function. << (Also used for the user input to repeat the program or game).
 def prog_Intf():
@@ -53,37 +53,46 @@ prog_Intf()
 Variable Invalid or Error Formats to be used on the main program below.
 """
 # Acronym: Number Data Invalid         | Inputs should range only on 0-9.
-num_dataInval = '{}'.format("\nNumerical inputs should range only on 0-9. \n>>> ")
+num_dataInval = '{}'.format("\n\033[0;32;1mRandom Number\033[0;1m should only \033[0;35;1mrange\033[0;1m from \033[33m(0-9)\033[0;1m. \n\n\033[34m>\033[0;34;1m>\033[0;33;1m> \033[0;32;1m")
 
 # Acronym: Alpha-Numerical Print Error | Inputs should range only on 0-9.
-alnum_printError = '{}'.format("\nDo not include any unnecessary input/s on the program. \nPlease try again by typing and entering a numerical input that should only range from 0-9. \n>>> ")
+alnum_printError = '{}'.format("\n\033[0;35;1mDo not include any \033[0;33;4munnecessary input/s ↵\033[0;1m on the \033[0;36;1mProgram\033[0;1m. \nPlease try again by generating a \033[0;32;1mRandom Number\033[0;1m that would range from \033[33m(0-9)\033[0;1m. \n\n\033[34m>\033[0;34;1m>\033[0;33;1m> \033[0;32;1m")
 
 # Acronym: Number Duplicate Error      | Duplicated Numerical Input.
-num_duplcError = '{}'.format("\nYour numerical input should not be the same as your previous input stored on the tuple list. \nPlease try again by typing and entering a different numerical input that should only range from 0-9. \n>>> ")
+num_duplcError = '{}'.format("\n\033[0;1mYour \033[32mRandom Number\033[0;1m should \033[0;35;1mnot be the same\033[0;1m as your \033[0;33;4mprevious input ↵\033[0;1m stored in the \033[33;1mLottery Menu\033[0;1m. \nPlease try again by generating a different \033[32mRandom Number\033[0;1m on your \033[0;33;4minput ↵\033[0;1m. \n\n\033[34m>\033[0;34;1m>\033[0;33;1m> \033[0;32;1m")
 
 # Acronym: Repeating Print Error       | User not inputting "Y" or "N" on the program repeat.
-RPT_printError = '{}'.format("\nInvalid Input. Please try again by answering \"Y\" / \"N\" (Yes / No) \nY , N >>> ")
+RPT_printError = '{}'.format("\n\033[0;31;1mInvalid Input\033[0;1m. Please try again by \033[0;35;1manswering\033[0;1m \"\033[34mY\033[0;1m\" \033[31m/\033[0;1m \"\033[33mN\033[0;1m\" (\033[34mYes\033[0;1m \033[31m/\033[0;1m \033[33mNo\033[0;1m) \n\n\033[34mY\033[34m \033[0;31;1m,\033[0;1m \033[33mN\033[0;1m \033[34m>\033[0;34;1m>\033[0;33;1m> \033[0;35;1m")
 
 # Acronym: Negative Value Error        | User Numerical Input - Less than 0 (Negative Integers).
-NEG_valError = '{}'.format("\nYour Numerical Input is Invalid. It should not be negative or less than 0. \nPlease try again by typing and entering a numerical input that should only range from 0-9. \n>>> ")
+NEG_valError = '{}'.format("\n\033[0;1mYour \033[0;32;1mRandom Number\033[0;1m is \033[0;35;1mless than\033[0;32;1m0\033[0;1m; typically a \033[31mNegative Integer\033[0;1m. \nPlease try again by generating a \033[0;32;1mRandom Number\033[0;1m that would range from \033[33m(0-9)\033[0;1m. \n\n\033[34m>\033[0;34;1m>\033[0;33;1m> \033[0;32;1m")
 
 # Acronym: Excel Value Error           | User Numerical Input - Greater than or Equal to 10 (Regarded Range: 0-9).
-EXC_valError = '{}'.format("\nYour Numerical Input is Invalid. It should not be greater or equal to 10. \nPlease try again by typing and entering a numerical input that should only range from 0-9. \n>>> ")
+EXC_valError = '{}'.format("\n\033[0;1mYour \033[0;32;1mRandom Number\033[0;1m is \033[0;35;1mgreater than \033[0;32;1m9\033[0;1m; typically an \033[31mExcel Integer\033[0;1m. \nPlease try again by generating a \033[0;32;1mRandom Number\033[0;1m that would range from \033[33m(0-9)\033[0;1m. \n\n\033[34m>\033[0;34;1m>\033[0;33;1m> \033[0;32;1m")
 
 """
 The General Format Variables for User Numerical Input
 """
 # Acronym: First (1st) Data Input      | User Numerical Input.
-data1_Inpt = '{}'.format("\nEnter your FIRST (1st) number on the space provided below.")
+data1_Inpt = '{}'.format("\n\033[0;35;1mGenerate\033[0;1m your \033[36mFIRST (1st)\033[0;32;1m Random Number\033[0;1m on the \033[33;4minput ↵\033[0;1m provided below.")
 
 # Acronym: Second (2nd) Data Input     | User Numerical Input.
-data2_Inpt = '{}'.format("\nEnter your SECOND (2nd) number on the space provided below.")
+data2_Inpt = '{}'.format("\n\033[0;35;1mGenerate\033[0;1m your \033[36mSECOND (2nd)\033[0;32;1m Random Number\033[0;1m on the \033[33;4minput ↵\033[0;1m provided below.")
 
 # Acronym: Third (3rd) Data Input      | User Numerical Input.
-data3_Inpt = '{}'.format("\nEnter your THIRD (3rd) number on the space provided below.")
+data3_Inpt = '{}'.format("\n\033[0;35;1mGenerate\033[0;1m your \033[36mTHIRD (3rd)\033[0;32;1m Random Number\033[0;1m on the \033[33;4minput ↵\033[0;1m provided below.")
 
 # Acronym: Configuration Repeat Input  | User Character Input (Y / N).
-configRPT_Inpt = '{}'.format("\nDo you want to try again? Answer only in characters \"Y\" / \"N\" (Yes / No). \nY , N >>> ")
+configRPT_Inpt = '{}'.format("\n\033[0;1mDo you want to try again? \033[0;35;1mAnswer\033[0;1m only in \033[36mAlpbetical Character\033[0;1m \"\033[34mY\033[0;1m\" \033[31m/\033[0;1m \"\033[33mN\033[0;1m\" (\033[34mYes\033[0;1m \033[31m/\033[0;1m \033[33mNo\033[0;1m) \n\n\033[34mY\033[34m \033[0;31;1m,\033[0;1m \033[33mN\033[0;1m \033[34m>\033[0;34;1m>\033[0;33;1m> \033[0;35;1m")
+
+# Acronym: Configuration Repeat Input  | Print Function Output.
+pphl_data1 = '{}'.format("\n\033[0;36;1mFIRST (1st)\033[0;32;1m Random Number\033[0m\n")
+
+# Acronym: Configuration Repeat Input  | Print Function Output.
+pphl_data2 = '{}'.format("\n\033[0;36;1mSECOND (2nd)\033[0;32;1m Random Number\033[0m\n")
+
+# Acronym: Configuration Repeat Input  | Print Function Output.
+pphl_data3 = '{}'.format("\n\033[0;36;1mTHIRD (3rd)\033[0;32;1m Random Number\033[0m\n")
 
 """
 THE ENTIRE METHOD OF THE VILLARIZA LOTTERY PROGRAM
@@ -135,12 +144,13 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
         inval_DGT = False
         inval1 = True; inval2 = True; inval3 = True
         while not(inval_DGT):
-            data1 = input(f"{data1_Inpt}   [N/A, N/A, N/A] \n>>> ")
+            data1 = input(f"{data1_Inpt}   \033[0;41;33;1m[N/A, N/A, N/A]\033[0m \n\n\033[34m>\033[0;34;1m>\033[0;33;1m> \033[0;32;1m")
             while inval1:
                 if len(data1) >= 2:
                     if (data1.isalpha() == True) or (data1.isprintable() == False) or (data1.isspace() == True):
                         os.system('cls') # The terminal output beforehand will be cleared.
-                        data1 = input(f"\nFIRST (1st) Number Input \n{alnum_printError}")
+                        prog_Intf()
+                        data1 = input(f"{pphl_data1} {alnum_printError}")
                         continue;
                     elif data1.isdigit() == True:
                         for beta in data1:
@@ -148,18 +158,21 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
                                 if len(data1) >= 3:
                                     if float(data1) >= 100:
                                         os.system('cls') # The terminal output beforehand will be cleared.
-                                        data1 = input(f"\nFIRST (1st) Number Input \n{EXC_valError}")
+                                        prog_Intf()
+                                        data1 = input(f"{pphl_data1} {EXC_valError}")
                                         continue;
                                     else:
                                         os.system('cls') # The terminal output beforehand will be cleared.
-                                        data1 = input(f"\nFIRST (1st) Number Input \n{num_dataInval}")
+                                        prog_Intf()
+                                        data1 = input(f"{pphl_data1} {num_dataInval}")
                                         break;
                                 else:
                                     inval1 = False
                                     break;
                             elif float(data1) >= 10:
                                 os.system('cls') # The terminal output beforehand will be cleared.
-                                data1 = input(f"\nFIRST (1st) Number Input \n{EXC_valError}")
+                                prog_Intf()
+                                data1 = input(f"{pphl_data1} {EXC_valError}")
                                 break;
                             else:
                                 continue;
@@ -168,27 +181,37 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
                     elif data1.replace("-","",10).isdigit() == True:
                         if int(data1) <= -1:
                             os.system('cls') # The terminal output beforehand will be cleared.
-                            data1 = input(f"\nFIRST (1st) Number Input \n{NEG_valError}")
+                            prog_Intf()
+                            data1 = input(f"{pphl_data1} {NEG_valError}")
                             continue;
                     else:
                         os.system('cls') # The terminal output beforehand will be cleared.
-                        data1 = input(f"\nFIRST (1st) Number Input \n{alnum_printError}")
+                        prog_Intf()
+                        data1 = input(f"{pphl_data1} {alnum_printError}")
                         continue;
                 elif len(data1) == 1:
                     if data1.isspace():
                         os.system('cls') # The terminal output beforehand will be cleared.
-                        data1 = input(f"\nFIRST (1st) Number Input \n{alnum_printError}")
+                        prog_Intf()
+                        data1 = input(f"{pphl_data1} {alnum_printError}")
                         continue;
                     else:
                         inval1 = False
                         break;
+                else:
+                    os.system('cls') # The terminal output beforehand will be cleared.
+                    prog_Intf()
+                    data1 = input(f"{pphl_data1} {alnum_printError}")
+                    continue;
             os.system('cls') # The terminal output beforehand will be cleared.
-            data2 = input(f"{data2_Inpt}  [{int(data1)}, N/A, N/A] \n>>> ")
+            prog_Intf()
+            data2 = input(f"{data2_Inpt}  \033[41;33;1m[{int(data1)}, N/A, N/A]\033[0m \n\n\033[34m>\033[0;34;1m>\033[0;33;1m> \033[0;32;1m")
             while inval2:
                 if len(data2) >= 2:
                     if (data2.isalpha() == True) or (data2.isprintable() == False) or (data2.isspace() == True):
                         os.system('cls') # The terminal output beforehand will be cleared.
-                        data2 = input(f"\nSECOND (2nd) Number Input \n{alnum_printError}")
+                        prog_Intf()
+                        data2 = input(f"{pphl_data2} {alnum_printError}")
                         continue;
                     elif data2.isdigit() == True:
                         for beta in data2:
@@ -196,16 +219,19 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
                                 if len(data2) >= 3:
                                     if float(data2) >= 100:
                                         os.system('cls') # The terminal output beforehand will be cleared.
-                                        data2 = input(f"\nSECOND (2nd) Number Input \n{EXC_valError}")
+                                        prog_Intf()
+                                        data2 = input(f"{pphl_data2} {EXC_valError}")
                                         continue;
                                     else:
                                         os.system('cls') # The terminal output beforehand will be cleared.
-                                        data2 = input(f"\nSECOND (2nd) Number Input \n{num_dataInval}")
+                                        prog_Intf()
+                                        data2 = input(f"{pphl_data2} {num_dataInval}")
                                         break;
                                 elif len(data2) == 2:
                                     if int(data2) == int(data1):
                                         os.system('cls') # The terminal output beforehand will be cleared.
-                                        data2 = input(f"\nSECOND (2nd) Number Input \n[{int(data1)}, {int(data2)}, N/A] \n{num_duplcError}")
+                                        prog_Intf()
+                                        data2 = input(f"{pphl_data2} \033[0;41;33;1m[{int(data1)}, N/A, N/A]\033[0m \n{num_duplcError}")
                                         continue;
                                     else:
                                         inval2 = False
@@ -215,7 +241,8 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
                                     break;
                             elif float(data2) >= 10:
                                 os.system('cls') # The terminal output beforehand will be cleared.
-                                data2 = input(f"\nSECOND (2nd) Number Input \n{EXC_valError}")
+                                prog_Intf()
+                                data2 = input(f"{pphl_data2} {EXC_valError}")
                                 break;    
                             else:
                                 continue;
@@ -224,31 +251,42 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
                     elif data2.replace("-","",10).isdigit() == True:
                         if int(data2) <= -1:
                             os.system('cls') # The terminal output beforehand will be cleared.
-                            data2 = input(f"\nSECOND (2nd) Number Input \n{NEG_valError}")
+                            prog_Intf()
+                            data2 = input(f"{pphl_data2} {NEG_valError}")
                             continue;
                     else:
                         os.system('cls') # The terminal output beforehand will be cleared.
-                        data2 = input(f"\nSECOND (2nd) Number Input \n{alnum_printError}")
+                        prog_Intf()
+                        data2 = input(f"{pphl_data2} {alnum_printError}")
                         continue;
                 elif len(data2) == 1:
                     if data2.isspace():
                         os.system('cls') # The terminal output beforehand will be cleared.
-                        data2 = input(f"\nSECOND (2nd) Number Input \n{alnum_printError}")
+                        prog_Intf()
+                        data2 = input(f"{pphl_data2} {alnum_printError}")
                         continue;
                     elif int(data2) == int(data1):
                         os.system('cls') # The terminal output beforehand will be cleared.
-                        data2 = input(f"\nSECOND (2nd) Number Input \n[{int(data1)}, {int(data2)}, N/A] \n{num_duplcError}")
+                        prog_Intf()
+                        data2 = input(f"{pphl_data2} \033[0;41;33;1m[{int(data1)}, N/A, N/A]\033[0m \n{num_duplcError}")
                         continue;
                     else:
                         inval2 = False
                         break;
+                else:
+                    os.system('cls') # The terminal output beforehand will be cleared.
+                    prog_Intf()
+                    data2 = input(f"{pphl_data2} {alnum_printError}")
+                    continue;
             os.system('cls') # The terminal output beforehand will be cleared.
-            data3 = input(f"{data3_Inpt}   [{int(data1)}, {int(data2)}, N/A] \n>>> ")
+            prog_Intf()
+            data3 = input(f"{data3_Inpt}   \033[0;41;33;1m[{int(data1)}, {int(data2)}, N/A]\033[0m \n\n\033[34m>\033[0;34;1m>\033[0;33;1m> \033[0;32;1m")
             while inval3:
                 if len(data3) >= 2:
                     if (data3.isalpha() == True) or (data3.isprintable() == False) or (data3.isspace() == True):
                         os.system('cls') # The terminal output beforehand will be cleared.
-                        data3 = input(f"\nTHIRD (3rd) Number Input \n{alnum_printError}")
+                        prog_Intf()
+                        data3 = input(f"{pphl_data3} {alnum_printError}")
                         continue;
                     elif data3.isdigit() == True:
                         for beta in data3:
@@ -256,16 +294,19 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
                                 if len(data3) >= 3:
                                     if float(data3) >= 100:
                                         os.system('cls') # The terminal output beforehand will be cleared.
-                                        data3 = input(f"\nTHIRD (3rd) Number Input \n{EXC_valError}")
+                                        prog_Intf()
+                                        data3 = input(f"{pphl_data3} {EXC_valError}")
                                         continue;
                                     else:
                                         os.system('cls') # The terminal output beforehand will be cleared.
-                                        data3 = input(f"\nTHIRD (3rd) Number Input \n{num_dataInval}")
+                                        prog_Intf()
+                                        data3 = input(f"{pphl_data3} {num_dataInval}")
                                         break;
                                 elif len(data3) == 2:
                                     if int(data3) == int(data1) or int(data3) == int(data2):
                                         os.system('cls') # The terminal output beforehand will be cleared.
-                                        data3 = input(f"\nSECOND (2nd) Number Input \n[{int(data1)}, {int(data2)}, N/A] \n{num_duplcError}")
+                                        prog_Intf()
+                                        data3 = input(f"{pphl_data3} \033[0;41;33;1m[{int(data1)}, {int(data2)}, N/A]\033[0m \n{num_duplcError}")
                                         continue;
                                     else:
                                         inval3 = False
@@ -275,7 +316,8 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
                                     break;
                             elif float(data3) >= 10:
                                 os.system('cls') # The terminal output beforehand will be cleared.
-                                data3 = input(f"\nTHIRD (3rd) Number Input \n{EXC_valError}")
+                                prog_Intf()
+                                data3 = input(f"{pphl_data3} {EXC_valError}")
                                 break;
                             else:
                                 continue;
@@ -284,31 +326,40 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
                     elif data3.replace("-","",10).isdigit() == True:
                         if int(data3) <= -1:
                             os.system('cls') # The terminal output beforehand will be cleared.
-                            data3 = input(f"\nTHIRD (3rd) Number Input \n{NEG_valError}")
+                            prog_Intf()
+                            data3 = input(f"{pphl_data3} {NEG_valError}")
                             continue;
                     else:
                         os.system('cls') # The terminal output beforehand will be cleared.
-                        data3 = input(f"\nTHIRD (3rd) Number Input \n{alnum_printError}")
+                        prog_Intf()
+                        data3 = input(f"{pphl_data3} {alnum_printError}")
                         continue;
                 elif len(data3) == 1:
                     if data3.isspace():
                         os.system('cls') # The terminal output beforehand will be cleared.
-                        data3 = input(f"\nTHIRD (3rd) Number Input \n{alnum_printError}")
+                        prog_Intf()
+                        data3 = input(f"{pphl_data3} {alnum_printError}")
                         continue;
                     elif int(data3) == int(data1) or int(data3) == int(data2):
                         os.system('cls') # The terminal output beforehand will be cleared.
-                        data3 = input(f"\nTHIRD (3rd) Number Input \n[{int(data1)}, {int(data2)}, {int(data3)}] \n{num_duplcError}")
+                        prog_Intf()
+                        data3 = input(f"{pphl_data3} \033[0;41;33;1m[{int(data1)}, {int(data2)}, N/A]\033[0m \n{num_duplcError}")
                         continue;
                     else:
                         inval3 = False
                         break;
+                else:
+                    os.system('cls') # The terminal output beforehand will be cleared.
+                    prog_Intf()
+                    data3 = input(f"{pphl_data3} {alnum_printError}")
+                    continue;
 
             fnl_data = [int(data1), int(data2), int(data3)]
             inval_DGT = True
             break;
 
         os.system('cls') # The terminal output beforehand will be cleared.
-        print(f"\nPython will match it now! Did you win or not? \nYour Numbers: [{int(data1)}, {int(data2)}, {int(data3)}]\n")
+        print(f"\n\033[0mPython will match it now! Did you win or not? \nYour Numbers: \033[0;41;33;1m[{int(data1)}, {int(data2)}, {int(data3)}]\033[0m\n")
 
         if sorted(fnl_data, reverse = True) == sorted(fnl_winNum, reverse = True):
             for alpha in range(countdownSec): # Objective: 3 seconds shall elapse for the loop to exit
@@ -320,7 +371,7 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
                     print("Revealing in   " + str(countdownSec - alpha) + " ...") # 2 seconds elapsed
                 time.sleep(1) # 1 second duration for every iteration
             os.system('cls') # The terminal output beforehand will be cleared.
-            print(f"\nYour Number: {fnl_data} = Lotto Number: {fnl_winNum} | You Win!")
+            print(f"\nYour Number: {fnl_data} = Lotto Number: {fnl_winNum} | \033[32;1You Win\033[0m!")
             winsound.PlaySound("Hello", winsound.SND_FILENAME)
             configRPT = input(f"{configRPT_Inpt}")
             os.system('cls') # The terminal output beforehand will be cleared.
@@ -348,14 +399,14 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
         else:
             for alpha in range(countdownSec): # Objective: 3 seconds elapsed for the loop to exit
                 if alpha == 0:
-                    print("Matching in    " + str(countdownSec - alpha) + " ...") # 0 second elapsed
+                    print("\033[0;31;1mMatching in\033[0;1m    " + str(countdownSec - alpha) + " ...\033[0m") # 0 second elapsed
                 elif alpha == 1:
-                    print("Evaluating in  " + str(countdownSec - alpha) + " ...") # 1 second elapsed
+                    print("\033[0;33;1mEvaluating in\033[0;1m  " + str(countdownSec - alpha) + " ...\033[0m") # 1 second elapsed
                 elif alpha == 2:
-                    print("Revealing in   " + str(countdownSec - alpha) + " ...") # 2 seconds elapsed
+                    print("\033[0;32;1mRevealing in\033[0;1m   " + str(countdownSec - alpha) + " ...\033[0m") # 2 seconds elapsed
                 time.sleep(1) # 1 second duration for every iteration
             os.system('cls') # The terminal output beforehand will be cleared.
-            print(f"\nYour Number: {fnl_data} = Lotto Number: {fnl_winNum} | You've Lost.")
+            print(f"\n\033[0;1mYour Number: \033[0;41;33;1m{fnl_data}\033[0;1m \033[35m=\033[0;1m Lotto Number: \033[0;41;33;1m{fnl_winNum}\033[0;1m | \033[31mYou Lost\033[0m.")
             winsound.PlaySound("Hello", winsound.SND_FILENAME)
             configRPT = input(f"{configRPT_Inpt}")
             os.system('cls') # The terminal output beforehand will be cleared.
