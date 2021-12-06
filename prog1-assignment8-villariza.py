@@ -202,6 +202,14 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
                                         os.system('cls') # The terminal output beforehand will be cleared.
                                         data2 = input(f"\nSECOND (2nd) Number Input \n{num_dataInval}")
                                         break;
+                                elif len(data2) == 2:
+                                    if int(data2) == int(data1):
+                                        os.system('cls') # The terminal output beforehand will be cleared.
+                                        data2 = input(f"\nSECOND (2nd) Number Input \n[{int(data1)}, {int(data2)}, N/A] \n{num_duplcError}")
+                                        continue;
+                                    else:
+                                        inval2 = False
+                                        break;
                                 else:
                                     inval2 = False
                                     break;
@@ -253,6 +261,14 @@ while not(verRepeat): # While = Statement False. // while False + verRepeat Fals
                                     else:
                                         os.system('cls') # The terminal output beforehand will be cleared.
                                         data3 = input(f"\nTHIRD (3rd) Number Input \n{num_dataInval}")
+                                        break;
+                                elif len(data3) == 2:
+                                    if int(data3) == int(data1) or int(data3) == int(data2):
+                                        os.system('cls') # The terminal output beforehand will be cleared.
+                                        data3 = input(f"\nSECOND (2nd) Number Input \n[{int(data1)}, {int(data2)}, N/A] \n{num_duplcError}")
+                                        continue;
+                                    else:
+                                        inval3 = False
                                         break;
                                 else:
                                     inval3 = False
