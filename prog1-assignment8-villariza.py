@@ -27,7 +27,7 @@ Variable Formats to be used for the program interface and settings.
 progGreet = "{}".format(f"\n\033[0;92;1mWelcome to\033[0m \033[41;33;1m🎰 Villariza Lottery 🎰\033[0m\n")
 
 # Acronym: Exit Input          | A Formal Valedictory of the Program to the user.
-progExt = '{}'.format(f"\n\033[0;1mThank you for playing \033[0;41;33;1m🎰 Villariza Lottery 🎰\033[0;1m !\nWe'll see you again next time! 🤝\n\n\033[0;34;1m💡 Python \033[33;1mInformation\033[0;1m: The \033[36mProgram\033[0;1m has been closed. 🔐\033[0m\n")
+progExt = '{}'.format("\n\033[0;1mThank you for playing \033[0;41;33;1m🎰 Villariza Lottery 🎰\033[0;1m !\nWe'll see you again next time! 🤝\n\n\033[0;34;1m💡 Python \033[33;1mInformation\033[0;1m: The \033[36mProgram\033[0;1m has been closed. 🔐\033[0m\n")
 
 # Acronym: Program Information | General Indicator on the Program Settings.
 progInfo = "{}".format(f"\n\033[0m📍 \033[47;30;1mPROGRAM INFORMATION AND INSTRUCTIONS\033[0m 📌\n")
@@ -85,13 +85,13 @@ data3_Inpt = '{}'.format("\n\033[0;35;1mGenerate\033[0;1m your \033[36mTHIRD (3r
 # Acronym: Configuration Repeat Input  | User Character Input (Y / N).
 configRPT_Inpt = '{}'.format("\n\033[0;1mDo you want to try again? \033[0;35;1mAnswer\033[0;1m only in \033[36mAlpbetical Character\033[0;1m \"\033[34mY\033[0;1m\" \033[31m/\033[0;1m \"\033[33mN\033[0;1m\" (\033[34mYes\033[0;1m \033[31m/\033[0;1m \033[33mNo\033[0;1m) \n\n\033[34mY\033[34m \033[0;31;1m,\033[0;1m \033[33mN\033[0;1m \033[34m>\033[0;34;1m>\033[0;33;1m> \033[0;35;1m")
 
-# Acronym: Configuration Repeat Input  | Print Function Output.
+# Acronym: Peripheral Data One (1)     | Print Function Output.
 pphl_data1 = '{}'.format("\n\033[0;36;1mFIRST (1st)\033[0;32;1m Random Number\033[0m\n")
 
-# Acronym: Configuration Repeat Input  | Print Function Output.
+# Acronym: Peripheral Data Two (2)     | Print Function Output.
 pphl_data2 = '{}'.format("\n\033[0;36;1mSECOND (2nd)\033[0;32;1m Random Number\033[0m\n")
 
-# Acronym: Configuration Repeat Input  | Print Function Output.
+# Acronym: Peripheral Data Three (3)   | Print Function Output.
 pphl_data3 = '{}'.format("\n\033[0;36;1mTHIRD (3rd)\033[0;32;1m Random Number\033[0m\n")
 
 """
@@ -111,6 +111,7 @@ fnl_winNum   = Final Winning Numbers
 inval        = Invalid (1st, 2nd, 3rd)
 inval_DGT    = Invalid Digit
 inval_IPT    = Invalid Input
+pphl_data    = Periphael Data (1st, 2nd, 3rd)
 progError    = Program Error
 rand_Duplc   = Random Duplicate
 ValueError   = Value Error 
