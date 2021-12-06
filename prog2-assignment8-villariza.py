@@ -63,7 +63,7 @@ Variable Invalid or Error Formats to be used on the main program below.
 usr_InputError = "{}".format("Input Invalid. Please enter only a numerical integer input ranging from (0-100). \n>>> ")
 
 # Acronym: Verify Repeat Error   | User not inputting "Yes" or "No" on the program repeat or is in character invalidity.
-verRPT_Error = "{}".format("\nInput Invalid. Type and Enter your Answer only in Yes or No. \n>>> ")
+verRPT_Error = "{}".format("\nInput Invalid. Type and Enter your Answer only in \"Yes\" or \"No\". \nYes / No >>> ")
 
 # Acronym: Negative Value Error  | User Numerical Input - Less than 0 (Negative Integers).
 NEG_valError = "{}".format(f"Input Invalid. Your numerical integer input is less than 0 as shown:")
@@ -78,7 +78,7 @@ The General Format Variables for User Numerical Input
 prog_usrInput = "{}".format("\nType and Enter your GUESS in NUMERICAL INPUT in the space provided below. \n>>> ")
 
 # Acronym: Verify Input          | User Character Input.
-verRPT_Input = "{}".format("\nWould you like to try again? Type and Enter only Yes or No. \n>>> ")
+verRPT_Input = "{}".format("\nWould you like to try again? Type and Enter only \"Yes\" or \"No\". \nYes / No >>> ")
 
 # Acronym: Greater Than Tip      | User Greater Numerical Input.
 GTR_Tip = "{}".format("TIP \nTry incrementing the integer of your numerical input. \n>>> ")
